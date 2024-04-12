@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<title>Disable Text Selection Using jQuery</title> 
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"> 
+	</script> 
+
+	<style> 
+		body { 
+			font-family: Arial, sans-serif; 
+			margin: 0; 
+			padding: 0; 
+			background-color: #f5f5f5; 
+		} 
+
+		.container { 
+			max-width: 800px; 
+			margin: 0 auto; 
+			padding: 20px; 
+			background-color: #fff; 
+			border: 1px solid #ccc; 
+			border-radius: 5px; 
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+			margin: 4rem; 
+		} 
+
+		.no-select { 
+			border: 3px solid green; 
+			padding: 20px; 
+			background-color: #f9f9f9; 
+			border-radius: 10px; 
+			margin-bottom: 10px; 
+			color: green; 
+		} 
+
+		p { 
+			line-height: 1.6; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class="container"> 
+		<h1> 
+			Disable Text Selection Using jQuery 
+		</h1> 
+		<div class="no-select"> 
+			<h1> 
+				Welcome To sreenidhi degree college
+			</h1> 
+		</div> 
+		<p> 
+KHAMMAM,Madhira,Telangana. 
+		</p> 
+	</div> 
+
+	<script> 
+		$(document).ready(function () { 
+			
+			// Disable text selection for elements 
+			// with class "no-select" 
+			$(".no-select").css({ 
+				"-webkit-user-select": "none", 
+				"-moz-user-select": "none", 
+				"-ms-user-select": "none", 
+				"user-select": "none" 
+			}); 
+		}); 
+	</script> 
+</body> 
+
+</html>
