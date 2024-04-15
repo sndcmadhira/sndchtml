@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+function validateform() {
+var name= document.getElementById("name").value;
+var passwd= document.getElementById("password").value;
+var user= document.getElementById("user").value;
+if (name ==null || name ==""){
+    alert("name should not be empty");
+    return false;
+}
+else if(passwd.length<6){
+  alert("password should not be less than 6 characters");
+  return false;
+}
+else if(user ==""){
+alert ("select user");
+return false;
+}
+}
+</script>
+
+</head> 
+<body>  
+<form action="" method="post" onsubmit="return validateform()" > 
+
+Name :<input type="text"  name="name" id="name" ><br> <br>
+
+password: <input type="password" name="password" id="password"> <br><br>
+
+<lable for="logintype"> choose the type of login :</lable>
+<select id="user" name="user">
+<option value=""> </option>
+<option value="user">user </option>
+<option value="admin">Admin</option>
+<option value="professor">professor</option>
+
+</select>
+
+
+<input type="submit" value="login">
+
+
+
+
+
+
+ 
+</form>  
+</body>
+</html>
+
