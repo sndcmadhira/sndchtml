@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/pngtree-blue-memphis-theme-for-mobile-background-picture-image_1433447.jpg);
+    background-position:center;
+    box-sizing: border-box;
+    background-size: cover;
+    display: grid;
+}
+.heading{
+    text-align: center;
+    font-size: 25px;
+  }
+ 
+ h3{
+    font-size: 20px;
+ }
+ .card{
+   font-size: 20px;
+   
+ }
+ .card1{
+    font-size: 20px;
+    padding: 1px;
+  }
+  .card2{
+    font-size: 20px;
+    padding: 1px;
+ 
+  }
+ p{
+    font-size: 20px;
+    line-height: 24px;
+ }
+ table{
+    border: 1px solid black;
+ }
+ li{
+   font-size: 20px;
+ }
+ ul{
+   font-size: 20px;
+ }
+  .sign{
+    font-size: 28px;
+    text-align: right;
+  }
